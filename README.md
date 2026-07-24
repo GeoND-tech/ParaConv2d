@@ -30,12 +30,14 @@ The script expects to find the GNU c++ compiler in /usr/bin/, CUDA's libcurand.s
 To build, clone the repository, go inside the directory and run:
 
 ```sh
+chmod +x buildpt.sh &&
 ./buildpt.sh paraconv2d
 ```
 
 If your PyTorch version is earlier than 2.13.0, run:
 
 ```sh
+chmod +x buildptpre2130.sh &&
 ./buildptpre2130.sh paraconv2d
 ```
 
@@ -49,6 +51,7 @@ You can test the op by comparing it to the corresponding op of the geondptfree l
 python -m venv pt2130 &&
 source pt2130/bin/activate &&
 pip install torch==2.13.0 &&
+chmod +x buildpt.sh &&
 ./buildpt.sh paraconv2d &&
 pip install geondptfree==2.13.0.1.2rc2 &&
 python ptparaconv2dtest.py
