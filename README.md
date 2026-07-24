@@ -14,6 +14,13 @@ This is a very early implementation of the operation and is the one included in 
 - PyTorch >= 2.9.0
 - gcc/g++ that supports C++17 (C++20 for PyTorch 2.13.0)
 
+## File structure
+
+- paraconv2d.cc: Contains the interface with python and the CPU implementations.
+- paraconv2d.cu: Launches the CUDA kernels that carry out the GPU computation.
+- paraconv2dkernels.cu: Contains the code for the forward pass kernels.
+- paraconv2dgradkernels: Contains the code for the backward pass kernels.
+
 ## Building
 
 Instead of using CMAKE or PyTorch, this repository can be built using a custom script. This is more transparent and straight forward and also makes including other object files in the build simpler.
