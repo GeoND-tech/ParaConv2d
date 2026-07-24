@@ -43,12 +43,13 @@ These custom script files allow modification and redistribution as long as you d
 
 ## Running an example
 
-You can test the op by comparing it to the corresponding op of the geondptfree library as their outputs should match exactly. Atfer building the shared object file, run:
+You can test the op by comparing it to the corresponding op of the geondptfree library as their outputs should match exactly:
 
 ```sh
 python -m venv pt2130 &&
 source pt2130/bin/activate &&
 pip install torch==2.13.0 &&
+./buildpt.sh paraconv2d &&
 pip install geondptfree==2.13.0.1.2rc2 &&
 python ptparaconv2dtest.py
 ```
