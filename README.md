@@ -48,8 +48,8 @@ You can test the op by comparing it to the corresponding op of the geondptfree l
 ```sh
 python -m venv pt2130 &&
 source pt2130/bin/activate &&
-pip install torch==2.13.0
-pip install geondptfree==2.13.0.1.2rc2
-python ptparaconv2dtest.py
+pip install torch==2.13.0 &&
+pip install geondptfree==2.13.0.1.2rc2 &&
+python ptparaconv2dtest.py &&
 ```
 
