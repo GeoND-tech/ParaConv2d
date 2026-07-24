@@ -19,7 +19,7 @@ This is a very early implementation of the operation and is the one included in 
 - paraconv2d.cc: Contains the interface with python and the CPU implementations.
 - paraconv2d.cu: Launches the CUDA kernels that carry out the GPU computation.
 - paraconv2dkernels.cu: Contains the code for the forward pass kernels.
-- paraconv2dgradkernels: Contains the code for the backward pass kernels.
+- paraconv2dgradkernels.cu: Contains the code for the backward pass kernels.
 
 ## Building
 
@@ -36,7 +36,7 @@ To build, clone the repository, go inside the directory and run:
 If your PyTorch version is earlier than 2.13.0, run:
 
 ```sh
-./buildptpre213.sh paraconv2d
+./buildptpre2130.sh paraconv2d
 ```
 
 These custom script files allow modification and redistribution as long as you don't remove the copyright notice inside them.
@@ -46,8 +46,8 @@ These custom script files allow modification and redistribution as long as you d
 You can test the op by comparing it to the corresponding op of the geondptfree library as their outputs should match exactly. Atfer building the shared object file, run:
 
 ```sh
-python -m venv pt2130
-source pt2130/bin/activate
+python -m venv pt2130 &&
+source pt2130/bin/activate &&
 pip install torch==2.13.0
 pip install geondptfree==2.13.0.1.2rc2
 python ptparaconv2dtest.py
