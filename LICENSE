@@ -1,0 +1,58 @@
+Educational Source-Available License
+
+Copyright (c) 2026 Nikolaos Tsapanos
+
+All rights reserved.
+
+1. Grant of Permission
+
+You are granted a limited, non-exclusive, non-transferable,
+revocable license to:
+
+- view the source code;
+- download the repository;
+- build the software for personal or educational use;
+- modify the software for your own private use;
+- use the repository as a reference or template when developing
+  independently authored software.
+
+2. Redistribution
+
+You may not redistribute this repository, in whole or in part,
+whether modified or unmodified, without prior written permission
+from the copyright holder.
+
+3. Commercial Use
+
+Commercial use of this software, or any substantial portion of its
+source code, is prohibited without prior written permission.
+
+4. Derivative Works
+
+You may create private modifications for personal or educational use.
+
+You may not distribute derivative works based on this source code
+without prior written permission.
+
+5. Independently Authored Software
+
+Nothing in this license prohibits creating independently authored
+software inspired by the architecture, ideas, techniques, or APIs
+demonstrated in this repository.
+
+However, copying substantial portions of this source code into
+software that is distributed is not permitted.
+
+6. Contributions
+
+This repository is not accepting external contributions.
+
+7. Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
