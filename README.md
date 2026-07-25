@@ -20,6 +20,7 @@ This is a very early implementation of the operation and is the one included in 
 - paraconv2d.cu: Launches the CUDA kernels that carry out the GPU computation.
 - paraconv2dkernels.cu: Contains the code for the forward pass kernels.
 - paraconv2dgradkernels.cu: Contains the code for the backward pass kernels.
+- ptparaconv2s.py: Provides the PyTorch module ParaConv2d.
 
 ## Building
 
