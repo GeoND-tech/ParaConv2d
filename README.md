@@ -26,7 +26,7 @@ This is a very early implementation of the operation and is the one included in 
 
 Instead of using CMAKE or PyTorch, this repository can be built using a custom script. This is more transparent and straight forward and also makes including other object files in the build simpler.
 
-The script expects to find the GNU c++ compiler in /usr/bin/, CUDA's libcurand.so in /usr/lib/x86_64-linux-gnu/ and CUDA's runtime libcudart.so in /usr/local/lib/. If these files are elsewhere, either edit the script file or place these files in their expected location.
+The script expects to find the GNU c++ compiler in /usr/bin/, CUDA's libcurand.so in /usr/lib/x86_64-linux-gnu/ and CUDA's runtime libcudart.so in /usr/local/lib/. If these files are elsewhere, either edit the script file or place these files in their expected location. This also allows you to control exactly which CUDA files the custom op is linked against.
 
 To build, clone the repository, go inside the directory and run:
 
